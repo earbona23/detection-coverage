@@ -14,4 +14,10 @@ jobs:
       - run: pytest -q
       - name: Self-check — the demo must flag its planted phantom coverage
         run: |
-          python -m coverage.cli --demo > /dev/null; test $? -eq 1 && echo "phantom coverage detected as expected"
+          # La herramienta sale 1 A PROPÓSITO cuando detecta cobertura fantasma.
+          # 'if' evita que ese exit intencional dispare el set -e del runner.
+          if python -m coverage.cli --demo > /dev/null; then
+            echo "self-check FALLÓ: el demo debía salir 1 (fantasma plantada)"; exit 1
+          else
+            echo "cobertura fantasma detectada como se esperaba"
+          fi
