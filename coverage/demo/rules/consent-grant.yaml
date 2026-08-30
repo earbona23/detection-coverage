@@ -1,0 +1,5 @@
+name: "Consentimiento OAuth ilícito"
+tactics: [initial-access, credential-access]
+relevantTechniques:
+  - T1566.002    # Phishing: Spearphishing Link (subtécnica -> cuenta para T1566)
+  - T1528        # Steal Application Access Token

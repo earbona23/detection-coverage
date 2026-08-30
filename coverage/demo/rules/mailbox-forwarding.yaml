@@ -1,0 +1,5 @@
+name: "Regla de reenvío externo"
+tactics: [collection, exfiltration]
+relevantTechniques:
+  - T1114.003    # Email Collection: Email Forwarding Rule
+  - T1020        # Automated Exfiltration

@@ -1,0 +1,4 @@
+name: "Escalada por asignacion de rol"
+tactics: [privilege-escalation]
+relevantTechniques:
+  - T1098.003    # Account Manipulation: Additional Cloud Roles

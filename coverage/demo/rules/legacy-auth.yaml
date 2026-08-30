@@ -1,0 +1,6 @@
+name: "Autenticacion heredada (regla con cobertura FANTASMA)"
+tactics: [defense-evasion, persistence]
+relevantTechniques:
+  - T1078         # Valid Accounts (válida)
+  - T1015         # Accessibility Features — REVOCADA en ATT&CK: cobertura fantasma
+  - T9999         # inventada: no existe en el catálogo

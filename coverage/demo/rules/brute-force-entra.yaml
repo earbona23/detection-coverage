@@ -1,0 +1,4 @@
+name: "Fuerza bruta contra Entra ID"
+tactics: [credential-access]
+relevantTechniques:
+  - T1110        # Brute Force
