@@ -1,5 +1,15 @@
 # detection-coverage
 
+> **Snapshot, not maintained.** This tool works and its tests pass, but it is not under
+> active development: I am not adding features and I do not review pull requests on a
+> schedule. Issues are welcome and I do read them — a reply may take a while. Last
+> substantive change: September 2026.
+>
+> Maintained instead: [revtriage](https://github.com/earbona23/revtriage),
+> [entra-tripwire](https://github.com/earbona23/entra-tripwire),
+> [entraform](https://github.com/earbona23/entraform) and
+> [vantage](https://github.com/earbona23/vantage).
+
 Maps your detection rules against the MITRE ATT&CK catalog and shows where your coverage
 actually is — and, just as importantly, which rules claim to cover techniques that **don't
 exist or were revoked**. It reads rules from files (no tenant required) and produces a
